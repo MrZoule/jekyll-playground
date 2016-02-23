@@ -9,7 +9,7 @@ address:
   city: Paris
 soins: 
   - type: hanche
-    prix: 19.99
+    prix: 19.98
   - type: "imagerie-deces"
     prix: 2000
 published: true
