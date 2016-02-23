@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="clinique">
+
+  <header class="clinique-header">
+    <h1 class="clinique-title">Clinique de {{ page.title }}</h1>
+  </header>
+
+  <article class="clinique-content">
+    {{ content }}
+  </article>
+
+  <aside>
+  	<h2>Adresse</h2>
+  	<p>
+  		{{ page.address.street }}
+  	</p>
+
+  	<h2>Soins</h2>
+  	<ul>
+	    {% for soin in page.soins %}
+	      <li>
+	        {{ site.data.soins[soin.type].label }} {{soin.prix}}€
+	      </li>
+    	{% endfor %}
+  	</ul>
+  </aside>
+</div>

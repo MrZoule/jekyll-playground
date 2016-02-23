@@ -1,0 +1,7 @@
+jekyll:
+    image: jekyll/jekyll:pages
+    volumes:
+        - .:/srv/jekyll
+    environment:
+        VIRTUAL_HOST: jekyll.test
+        VIRTUAL_PORT: 4000
